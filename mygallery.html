@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title id="myname"></title>
+    <title>user gallery</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="maingalleryassets/css/main.css" />
@@ -13,8 +13,8 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <!-- usergallery script -->
-    <script src="usergallery.js"></script>
+    <!-- mygallery javascript -->
+    <script src="mygallery.js"></script>
 
 </head>
 
@@ -33,7 +33,7 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo" id="myname">Sparta Galleria</a>
+            <a href="index.html" class="logo">Sparta Galleria</a>
         </header>
 
         <!-- Nav -->
@@ -41,18 +41,16 @@
             <ul class="links">
                 <li><a href="index.html">Gallery</a></li>
                 <li><a href="upload.html">picture upload</a></li>
-                <li><a href="mygallery.html">my pictures</a></li>
+                <li class="active"><a href="mygallery.html">my pictures</a></li>
                 <li><a href="login.html" onclick="logout()">logout</a></li>
-                <!-- <li><input type="button" onclick="logout()" value="logout"></li> -->
             </ul>
         </nav>
 
         <div id="main">
             <!-- pictures -->
-            <section class="posts" id="usergallerypicture">
+            <section class="posts" id="mypicture-box">
             </section>
         </div>
-
 
         <!-- Footer -->
         <footer id="footer">
